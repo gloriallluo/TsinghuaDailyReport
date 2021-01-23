@@ -16,5 +16,5 @@
 
 
 ### 效果图
-![效果图1](https://github.com/naihaishy/TsinghuaDailyReport/blob/master/results/a.png) 
-![效果图2](https://github.com/naihaishy/TsinghuaDailyReport/blob/master/results/b.png) 
+![效果图1](https://github.com/errorfg/TsinghuaDailyReport/blob/master/results/a.png) 
+![效果图2](https://github.com/errorfg/TsinghuaDailyReport/blob/master/results/b.png) 
