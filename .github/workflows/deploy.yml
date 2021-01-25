@@ -4,9 +4,13 @@
 name: TsinghuaDaily Report
 
 on:
-  # 每天北京时间 10点整 (utc+8)自动运行
+  # 每天北京时间 9 点整 (utc+8)自动运行
   schedule:
     - cron: "0 1 * * *"
+  # manually triggered, test only
+  workflow_dispatch:
+
+  
 
 jobs:
   submit_report:
@@ -24,6 +28,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Run
+      if: (github.event_name == 'workflow_dispatch' && github.actor == github.repository_owner ) || github.event_name == 'schedule'
       run: |
         python3 report.py
       env: # Or as an environment variable
