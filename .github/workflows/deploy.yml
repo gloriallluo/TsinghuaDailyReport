@@ -4,9 +4,9 @@
 name: TsinghuaDaily Report
 
 on:
-  # 每天北京时间 9 点整 (utc+8)自动运行
+  # 每天北京时间 8 点整 (utc+8)自动运行
   schedule:
-    - cron: "0 1 * * *"
+    - cron: "0 0 * * *"
   # manually triggered, test only
   workflow_dispatch:
 
